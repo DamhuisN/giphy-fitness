@@ -1,0 +1,15 @@
+:root {
+  /* Branding colors */
+  --primary-color: #333333;
+
+  /* Grey colors */
+  --background-color: #FEFEFE;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
