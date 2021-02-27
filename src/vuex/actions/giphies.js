@@ -5,7 +5,7 @@ export const GIPHIES_SUCCESS = 'GIPHIES_SUCCESS';
 export const GIPHIES_FAILURE = 'GIPHIES_FAILURE';
 
 /**
- * GetGiphiesucces fills the state with the giphy request to indicate we are fetching giphies
+ * getGiphiesRequest fills the state with the giphy request to indicate we are fetching giphies
  * @param {Object} state - The vuex state that we will manipulate
  */
 export const getGiphiesRequest = state => {
@@ -20,7 +20,7 @@ export const getGiphiesRequest = state => {
  * @param {Object} state - The vuex state that we will manipulate
  * @param {error} payload - The payload to place in the state
  */
-export const getGiphiesSucces = (state, payload) => {
+export const getGiphiesSuccess = (state, payload) => {
   const data = {
     type: GIPHIES_SUCCESS,
     payload: payload.data
@@ -29,7 +29,7 @@ export const getGiphiesSucces = (state, payload) => {
 };
 
 /**
- * Set a failure object to the vuex state if the call fails for any reason
+ * getGiphiesFailure sets a failure object to the vuex state if the call fails for any reason
  * @param {Object} state - The vuex state that we will manipulate
  * @param {error} error - The error to place in the state
  */
@@ -54,7 +54,7 @@ export const getGiphies = (state, {subject, offset, limit}) => {
 
   return fetchGiphies(subject, offset, limit)
       .then(result => {
-        state.dispatch('getGiphiesSucces', {data: result.data});
+        state.dispatch('getGiphiesSuccess', {data: result.data});
       })
       .catch(error => {
         state.dispatch('getGiphiesFailure', error);

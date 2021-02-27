@@ -1,7 +1,7 @@
 import {createStore} from "vuex"
 
 import {getGiphiesMutation} from './vuex/mutations/giphies';
-import {getGiphies, getGiphiesRequest, getGiphiesSucces, getGiphiesFailure} from './vuex/actions/giphies';
+import {getGiphies, getGiphiesRequest, getGiphiesSuccess, getGiphiesFailure} from './vuex/actions/giphies';
 
 const store = createStore({
   state: {
@@ -14,7 +14,7 @@ const store = createStore({
   actions: {
     getGiphies,
     getGiphiesRequest,
-    getGiphiesSucces,
+    getGiphiesSuccess,
     getGiphiesFailure
   }
 })
