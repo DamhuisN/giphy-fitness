@@ -2,7 +2,7 @@
 
 https://giphy-fitness.web.app
 
-## A simple Vue 3.0 application built in 2~ hours that fetches images with the subject 'fitness' from the giphy API
+## A simple Vue 3.0 application built in 3~ hours that fetches images with the subject 'fitness' from the giphy API
 Using the following tools and techniques:
 
 * Vue 3.0 - https://v3.vuejs.org/
@@ -18,7 +18,8 @@ Using the following tools and techniques:
 
 * Either Jest or Mocha for Unit Testing
 * A Server side layer to properly hide the key used in the Giphy Helper
-* A
+* A proper css precompiler like sass or less
+* A lightweight css framework like Tailwind
 
 ## Project setup
 ```
