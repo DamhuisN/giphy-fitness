@@ -1,6 +1,6 @@
 # Giphy Fitness Mood
 
-## A simple Vue 3.0 application built in 2~ hours that fetches images with the subject 'fitness' from the giphy API
+## A simple Vue 3.0 application built in 3~ hours that fetches images with the subject 'fitness' from the giphy API
 Using the following tools and techniques:
 
 * Vue 3.0 - https://v3.vuejs.org/
