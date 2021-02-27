@@ -16,7 +16,8 @@ Using the following tools and techniques:
 
 * Either Jest or Mocha for Unit Testing
 * A Server side layer to properly hide the key used in the Giphy Helper
-* A
+* A proper css precompiler like sass or less
+* A lightweight css framework like Tailwind
 
 ## Project setup
 ```
